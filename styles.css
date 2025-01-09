@@ -807,3 +807,159 @@ a:hover {
         font-size: 0.8rem;
     }
 }
+/* ... Previous CSS ... */
+
+/* Contracts Page Styles */
+.contracts {
+    padding: 50px 0;
+    background-color: #312e38;
+}
+
+.contracts h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #5ac8fa;
+    text-align: center;
+    font-weight: 600;
+}
+
+.contracts p {
+    font-size: 1rem;
+    color: #5ac8fa;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contract-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.contract-card {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #5ac8fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contract-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contract-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.contract-header h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #5ac8fa;
+    margin: 0 10px 0 0;
+}
+
+.contract-header img {
+    width: 40px;
+    height: 40px;
+}
+
+.contract-details {
+    margin-bottom: 15px;
+}
+
+.contract-details p {
+    font-size: 1rem;
+    color: #f8f9fa;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.contract-details p span {
+    font-weight: 600;
+}
+
+.contract-card .purchase_btn {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* Out of Stock Styling */
+.contract-card.out-of-stock {
+    opacity: 0.6; /* Make it slightly transparent */
+    pointer-events: none; /* Disable interactions */
+}
+
+.contract-card.out-of-stock .purchase_btn {
+    background-color: #6c757d; /* Gray out the button */
+    border-color: #6c757d;
+    cursor: default;
+}
+.algorithm-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.algorithm-tabs .tab {
+    background-color: #5ac8fa;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.algorithm-tabs .tab:hover {
+    background-color: #4fb3e6;
+}
+
+.algorithm-tabs .tab.active {
+    background-color: #3992bf;
+}
+/* Additional responsive adjustments */
+@media (max-width: 768px) {
+    .contract-card {
+        padding: 15px;
+    }
+
+    .contract-header h4 {
+        font-size: 1.5rem;
+    }
+
+    .contract-details p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contract-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .contract-card {
+        padding: 10px;
+    }
+
+    .contract-header h4 {
+        font-size: 1.2rem;
+    }
+
+    .contract-header img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contract-details p {
+        font-size: 0.8rem;
+    }
+}
