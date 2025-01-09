@@ -1,145 +1,47 @@
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/**
-* Desktop Navigation
-*/
-#mainNav {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    background-color: #fff;
-    transition: background-color 0.2s ease;
+/* General styles for the entire page */
+body {
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+    margin: 0; /* Remove default margins */
+    background-color: #212529; /* Dark background color */
+    color: #f8f9fa; /* Light text color */
 }
 
-#mainNav .navbar-brand {
-    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-weight: 700;
-    color: #212529;
+/* Container to center content */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-#mainNav .navbar-nav {
-    margin-top: 1rem;
+/* Header styles */
+header {
+    background-color: transparent; /* No background in the image */
+    padding: 20px 0;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo and menu */
 }
 
-#mainNav .navbar-nav .nav-item {
-    margin-right: 1rem;
+.logo {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #f8f9fa;
+    text-decoration: none;
 }
 
-#mainNav .navbar-nav .nav-item:last-child {
-    margin-right: 0;
+.menu-button {
+    background: none;
+    border: none;
+    color: #f8f9fa;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
 
-#mainNav .navbar-nav .nav-item .nav-link {
-    color: #6c757d;
-    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-weight: 700;
-    padding: 0.75rem 0;
-    transition: color 0.2s ease;
-}
-
-#mainNav .navbar-nav .nav-item .nav-link:hover,
-#mainNav .navbar-nav .nav-item .nav-link:active {
-    color: #5ac8fa;
-}
-
-#mainNav .navbar-nav .nav-item .nav-link.active {
-    color: #5ac8fa !important;
-}
-
-.login_btn {
-    font-size: 16px;
-    font-weight: bold;
-    color: #212529;
-    background: #fff;
-    border: 2px solid #5ac8fa;
-    border-radius: 50px;
-    padding: 10px 40px;
-    transition: .5s;
-    margin-right: 10px;
-}
-
-.register_btn {
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
-    background: #5ac8fa;
-    border: 2px solid #5ac8fa;
-    border-radius: 50px;
-    padding: 10px 40px;
-    transition: .5s;
-}
-
-.login_btn:hover {
-    background: #5ac8fa;
-    color: #fff;
-}
-
-.register_btn:hover {
-    background: #fff;
-    color: #212529;
-}
-
-@media (min-width: 992px) {
-    #mainNav {
-        box-shadow: none;
-        background-color: transparent;
-    }
-
-    #mainNav.navbar-scrolled {
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-        background-color: #fff;
-    }
-
-    #mainNav.navbar-scrolled .navbar-brand {
-        color: #212529;
-    }
-
-    #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
-        color: #212529;
-    }
-
-    #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover,
-    #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:active {
-        color: #5ac8fa;
-    }
-
-    #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link.active {
-        color: #5ac8fa !important;
-    }
-
-    #mainNav .navbar-brand {
-        color: #fff;
-        padding: 0.5rem 0;
-    }
-
-    #mainNav .navbar-brand:hover,
-    #mainNav .navbar-brand:active {
-        color: #5ac8fa;
-    }
-
-    #mainNav .navbar-nav {
-        margin-top: 0;
-    }
-
-    #mainNav .navbar-nav .nav-item .nav-link {
-        color: rgba(255, 255, 255, 0.7);
-        padding: 0 1rem;
-    }
-
-    #mainNav .navbar-nav .nav-item .nav-link:hover {
-        color: #fff;
-    }
-
-    #mainNav .navbar-nav .nav-item:last-child .nav-link {
-        padding-right: 0;
-    }
-}
-
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
+/* Hero section styles */
 .hero {
-    background: linear-gradient(178deg, #5ac8fa 0%, #57d79f 100%);
-    padding: 250px 0 100px;
+    padding: 50px 0;
+    text-align: center;
+    background: linear-gradient(178deg, #5ac8fa 0%, #57d79f 100%); /* Gradient background */
 }
 
 .hero h6 {
@@ -153,37 +55,6 @@
     font-weight: 600;
     font-size: 3.5rem;
     margin-bottom: 20px;
-}
-
-.stat_hero {
-    display: flex;
-    margin-bottom: 40px;
-}
-
-.stat_hero .block_stat {
-    display: flex;
-    margin-right: 60px;
-}
-
-.stat_hero .block_stat:last-child {
-    margin-right: 0;
-}
-
-.stat_hero .block_stat img {
-    margin-right: 10px;
-}
-
-.stat_hero .block_stat h4 {
-    color: #fff;
-    font-weight: 600;
-    font-size: 1.8rem;
-    margin-bottom: 0;
-}
-
-.stat_hero .block_stat span {
-    color: #fff;
-    font-weight: 300;
-    font-size: 1.2rem;
 }
 
 .hero p {
@@ -202,6 +73,8 @@
     font-weight: 600;
     font-size: 1.2rem;
     transition: .5s;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .start_btn:hover {
@@ -209,175 +82,42 @@
     color: #fff;
 }
 
+.stat_hero {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.block_stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.stat_hero .block_stat img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.stat_hero .block_stat h4 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+.stat_hero .block_stat span {
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
 .image_hero img {
     width: 110%;
 }
 
-/*--------------------------------------------------------------
-# Typography
---------------------------------------------------------------*/
-body,
-html {
-    width: 100%;
-    height: 100%;
-}
-
-body {
-    font-family: "Montserrat", sans-serif;
-    overflow-x: hidden;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 700;
-    font-family: "Montserrat", sans-serif;
-    color: #212529;
-}
-
-hr.divider {
-    height: 0.2rem;
-    max-width: 3.25rem;
-    margin: 1.5rem auto;
-    background-color: #5ac8fa;
-    opacity: 1;
-}
-
-hr.light {
-    border-color: #fff;
-}
-
-a {
-    color: #5ac8fa;
-    transition: 0.2s;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #5ac8fa;
-    text-decoration: none;
-}
-
-.btn {
-    font-weight: 700;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 0.3rem;
-}
-
-.page-section {
-    padding: 5rem 0;
-}
-
-.page-section h2.title {
-    font-size: 2rem;
-    line-height: 2.5rem;
-    margin-bottom: 3rem;
-    text-align: center;
-    font-weight: 600;
-}
-
-.page-section h3.section-subheading {
-    font-size: 1rem;
-    font-weight: 400;
-    font-style: italic;
-    margin-bottom: 4rem;
-    text-transform: none;
-    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-@media (min-width: 768px) {
-    section {
-        padding: 8rem 0;
-    }
-}
-
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-.about {
-    padding-top: 100px;
-}
-
-.discover {
-    text-align: right;
-    margin-bottom: 80px;
-}
-
-.discover_link {
-    background: #5ac8fa;
-    padding: 10px 40px 10px 20px;
-    border-radius: 50px;
-    font-weight: 500;
-    font-size: 1.2rem;
-    color: #fff;
-    position: relative;
-    transition: .5s;
-}
-
-.discover_link:hover {
-    color: #fff;
-    padding: 10px 20px 10px 40px;
-}
-
-.discover_link img {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: .5s;
-}
-
-.discover_link:hover img {
-    right: 15px;
-  }
-/*--------------------------------------------------------------
-# About (Continued)
---------------------------------------------------------------*/
-.about_content h6 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-.about_content h5 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 40px;
-}
-
-.block_about {
-    margin-bottom: 30px;
-}
-
-.block_about img {
-    margin-bottom: 20px;
-}
-
-.block_about h4 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.block_about p {
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: #6c757d;
-    margin-bottom: 0;
-}
-
-/*--------------------------------------------------------------
-# Pricing
---------------------------------------------------------------*/
-.pricing {
-    padding-top: 100px;
-    background: #f8f9fa;
-}
-
+/* Pricing and marketing */
 .subtitle {
     text-align: center;
     font-size: 1.3rem;
@@ -511,155 +251,25 @@ a:hover {
     vertical-align: top;
     border-color: #5ac8fa;
 }
-/*--------------------------------------------------------------
-# Referral
---------------------------------------------------------------*/
-.referral {
-    padding-top: 100px;
-}
-
-.referral h6 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 15px;
-    color: #5ac8fa;
-}
-
-.referral h5 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.referral h4 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.referral p {
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: #6c757d;
-    margin-bottom: 40px;
-}
-
-/*--------------------------------------------------------------
-# Responsive design
---------------------------------------------------------------*/
-@media (max-width: 992px) {
-    .stat_hero {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .stat_hero .block_stat {
-        margin-right: 0;
-        margin-bottom: 20px;
-        width: 45%;
-    }
-
-    .stat_hero .block_stat:nth-child(2n) {
-        margin-right: 0;
-    }
-
-    .image_hero {
-        margin-top: 50px;
-    }
-
-    .about_content {
-        text-align: center;
-    }
-
-    .block_about {
-        text-align: left;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero h5 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .hero {
-        padding: 150px 0 100px;
-    }
-
-    .about_content h5 {
-        font-size: 2rem;
-    }
-
-    .block_about {
-        text-align: center;
-    }
-}
-
-@media (max-width: 576px) {
-    .stat_hero .block_stat {
-        width: 100%;
-    }
-
-    .about_content {
-        margin-bottom: 50px;
-    }
-
-    .table th,
-    .table td {
-        padding: 1rem 0.5rem;
-        font-size: 14px;
-    }
-
-    .price_table h6 {
-        font-size: 1.5rem;
-    }
-
-    .price_table h5 {
-        font-size: 1.2rem;
-    }
-
-    .price_table h5 span {
-        font-size: 0.9rem;
-    }
-
-    .price_table p {
-        font-size: 0.9rem;
-    }
-
-    .purchase_btn {
-        font-size: 1rem;
-        padding: 10px 20px;
-        width: 150px;
-    }
-
-    .name_label {
-        font-size: 14px;
-        padding: 5px 15px;
-        width: 120px;
-    }
-    }
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-.footer {
+/* Footer styles */
+footer {
     padding: 50px 0;
-    background: #212529;
+    background-color: #212529; /* Dark background */
+    color: #f8f9fa; /* Light text */
+    text-align: center; /* Center align the footer content */
 }
 
 .footer h5 {
+    color: #fff;
     font-size: 1.5rem;
     font-weight: 600;
-    color: #fff;
     margin-bottom: 20px;
 }
 
 .footer ul {
     list-style: none;
     padding: 0;
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 
 .footer ul li {
@@ -667,21 +277,154 @@ a:hover {
 }
 
 .footer ul li a {
+    color: #6c757d; /* Lighter text for links */
+    text-decoration: none;
     font-size: 1.1rem;
-    font-weight: 400;
-    color: #6c757d;
-    transition: .5s;
+    transition: color 0.2s ease;
 }
 
 .footer ul li a:hover {
-    color: #5ac8fa;
+    color: #5ac8fa; /* Highlight color on hover */
+}
+
+.footer .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer .col-md-4 {
+    flex: 0 0 30%; /* Adjust column width */
+    max-width: 30%; /* Adjust column width */
+    margin-bottom: 20px;
 }
 
 .copyright {
-    text-align: center;
-    background: #000;
+    background-color: #000;
     color: #fff;
     padding: 20px 0;
     font-size: 1.1rem;
-    font-weight: 400;
+    text-align: center;
 }
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .footer .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* about */
+.discover {
+    text-align: right;
+    margin-bottom: 80px;
+}
+
+.discover_link {
+    background: #5ac8fa;
+    padding: 10px 40px 10px 20px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #fff;
+    position: relative;
+    transition: .5s;
+}
+
+.discover_link:hover {
+    color: #fff;
+    padding: 10px 20px 10px 40px;
+}
+
+.discover_link img {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .5s;
+}
+
+.discover_link:hover img {
+    right: 15px;
+  }
+/*--------------------------------------------------------------
+# About (Continued)
+--------------------------------------------------------------*/
+.about_content h6 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.about_content h5 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.block_about {
+    margin-bottom: 30px;
+}
+
+.block_about img {
+    margin-bottom: 20px;
+}
+
+.block_about h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.block_about p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+.about {
+    padding-top: 100px;
+}
+
+.discover {
+    text-align: right;
+    margin-bottom: 80px;
+}
+
+.discover_link {
+    background: #5ac8fa;
+    padding: 10px 40px 10px 20px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #fff;
+    position: relative;
+    transition: .5s;
+}
+
+.discover_link:hover {
+    color: #fff;
+    padding: 10px 20px 10px 40px;
+}
+
+.discover_link img {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .5s;
+}
+
+.discover_link:hover img {
+    right: 15px;
+}
+
+/* Add more styles here for other sections (mining-ui, footer, etc.) */
