@@ -511,3 +511,133 @@ a:hover {
     vertical-align: top;
     border-color: #5ac8fa;
 }
+/*--------------------------------------------------------------
+# Referral
+--------------------------------------------------------------*/
+.referral {
+    padding-top: 100px;
+}
+
+.referral h6 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #5ac8fa;
+}
+
+.referral h5 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.referral h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.referral p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #6c757d;
+    margin-bottom: 40px;
+}
+
+/*--------------------------------------------------------------
+# Responsive design
+--------------------------------------------------------------*/
+@media (max-width: 992px) {
+    .stat_hero {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .stat_hero .block_stat {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 45%;
+    }
+
+    .stat_hero .block_stat:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .image_hero {
+        margin-top: 50px;
+    }
+
+    .about_content {
+        text-align: center;
+    }
+
+    .block_about {
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h5 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero {
+        padding: 150px 0 100px;
+    }
+
+    .about_content h5 {
+        font-size: 2rem;
+    }
+
+    .block_about {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .stat_hero .block_stat {
+        width: 100%;
+    }
+
+    .about_content {
+        margin-bottom: 50px;
+    }
+
+    .table th,
+    .table td {
+        padding: 1rem 0.5rem;
+        font-size: 14px;
+    }
+
+    .price_table h6 {
+        font-size: 1.5rem;
+    }
+
+    .price_table h5 {
+        font-size: 1.2rem;
+    }
+
+    .price_table h5 span {
+        font-size: 0.9rem;
+    }
+
+    .price_table p {
+        font-size: 0.9rem;
+    }
+
+    .purchase_btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+        width: 150px;
+    }
+
+    .name_label {
+        font-size: 14px;
+        padding: 5px 15px;
+        width: 120px;
+    }
+    }
