@@ -334,3 +334,180 @@ a:hover {
 .discover_link:hover img {
     right: 15px;
   }
+/*--------------------------------------------------------------
+# About (Continued)
+--------------------------------------------------------------*/
+.about_content h6 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.about_content h5 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.block_about {
+    margin-bottom: 30px;
+}
+
+.block_about img {
+    margin-bottom: 20px;
+}
+
+.block_about h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.block_about p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Pricing
+--------------------------------------------------------------*/
+.pricing {
+    padding-top: 100px;
+    background: #f8f9fa;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #5ac8fa;
+    display: block;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.desc_sec {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #6c757d;
+    margin-bottom: 50px;
+}
+
+.price_table {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.table>:not(caption)>*>* {
+    padding: 1.5rem 1rem;
+}
+
+.table .img_th {
+    width: 150px;
+}
+
+.popular {
+    display: block;
+    text-align: center;
+    background: #5ac8fa;
+    color: #fff;
+    border-radius: 50px;
+    padding: 5px 20px;
+    width: 180px;
+    margin: 0 auto 20px;
+}
+
+.price_table h6 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.price_table h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.price_table h5 span {
+    font-size: 1rem;
+}
+
+.price_table p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #6c757d;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.purchase_btn {
+    display: block;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background: #5ac8fa;
+    color: #fff;
+    border: 2px solid #5ac8fa;
+    padding: 10px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: .5s;
+}
+
+.purchase_btn:hover {
+    background: transparent;
+    color: #5ac8fa;
+}
+
+.name_label {
+    display: block;
+    text-align: left;
+    background: #5ac8fa;
+    color: #fff;
+    border-radius: 50px;
+    padding: 5px 20px;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.name_label_center {
+    text-align: center;
+    width: auto;
+}
+
+.table-bordered>:not(caption)>* {
+    border-width: 2px;
+}
+
+.table-bordered>:not(caption)>*>* {
+    border-width: 2px;
+}
+
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-striped-color: #212529;
+    --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+    --bs-table-active-color: #212529;
+    --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+    --bs-table-hover-color: #212529;
+    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    vertical-align: top;
+    border-color: #5ac8fa;
+}
