@@ -1,40 +1,59 @@
-// Placeholder contract data (we'll replace this with data from the Nicehash API later)
+// Placeholder contract data (replace with data from the Nicehash API later)
 const contractData = {
     sha256: [
         {
-            hashrate: "100 GH/s",
+            hashrate: "1 TH/s",
             duration: "24 Hours",
-            price: "$50.00",
+            price: "$15.00",
             availability: "In Stock",
             image: "https://via.placeholder.com/40x40.png?text=BTC"
         },
         {
-            hashrate: "500 GH/s",
+            hashrate: "5 TH/s",
             duration: "24 Hours",
-            price: "$200.00",
+            price: "$70.00",
             availability: "In Stock",
             image: "https://via.placeholder.com/40x40.png?text=BTC"
         },
-        // Add more SHA-256 contracts here
+        {
+            hashrate: "10 TH/s",
+            duration: "24 Hours",
+            price: "$130.00",
+            availability: "Out of Stock",
+            image: "https://via.placeholder.com/40x40.png?text=BTC"
+        }
     ],
     scrypt: [
         {
-            hashrate: "500 MH/s",
+            hashrate: "10 MH/s",
             duration: "1 Week",
-            price: "$75.00",
+            price: "$25.00",
             availability: "In Stock",
             image: "https://via.placeholder.com/40x40.png?text=LTC"
         },
         {
-            hashrate: "1 GH/s",
+            hashrate: "50 MH/s",
             duration: "1 Week",
-            price: "$125.00",
+            price: "$110.00",
             availability: "In Stock",
             image: "https://via.placeholder.com/40x40.png?text=LTC"
         },
-        // Add more Scrypt contracts here
+        {
+            hashrate: "100 MH/s",
+            duration: "1 Week",
+            price: "$200.00",
+            availability: "Out of Stock",
+            image: "https://via.placeholder.com/40x40.png?text=LTC"
+        }
     ],
     ethash: [
+        {
+            hashrate: "50 MH/s",
+            duration: "1 Month",
+            price: "$80.00",
+            availability: "In Stock",
+            image: "https://via.placeholder.com/40x40.png?text=ETH"
+        },
         {
             hashrate: "100 MH/s",
             duration: "1 Month",
@@ -45,11 +64,10 @@ const contractData = {
         {
             hashrate: "200 MH/s",
             duration: "1 Month",
-            price: "$250.00",
-            availability: "Out of Stock",
+            price: "$280.00",
+            availability: "In Stock",
             image: "https://via.placeholder.com/40x40.png?text=ETH"
-        },
-        // Add more Ethash contracts here
+        }
     ]
 };
 
